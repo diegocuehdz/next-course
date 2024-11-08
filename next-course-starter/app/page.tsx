@@ -1,12 +1,10 @@
-import Link from "next/link";
-import ProductCard from "./components/ProductCard";
+import UsersPage from "./users/page";
 
 export default function Home() {
   return (
     <main>
       <h1>Hello world</h1>
-      <Link href="/users">Users</Link>
-      <ProductCard />
+      <UsersPage searchParams={{ sortOrder: "name" }} />
     </main>
   );
 }
